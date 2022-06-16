@@ -24,7 +24,7 @@ class AudioPlayer {
       const MethodChannel('xyz.luan/audioplayers')
         ..setMethodCallHandler(platformCallHandler);
 
-  static const _uuid = Uuid();
+  static final _uuid = Uuid();
 
   final StreamController<PlayerState> _playerStateController =
       StreamController<PlayerState>.broadcast();
